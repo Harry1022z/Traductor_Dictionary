@@ -1,0 +1,207 @@
+:root {
+    --violette: #d2c7e2;
+    --purple-gray: #f1efff;
+    --soft-purple: #ab9aca;
+    --lila: #a84dc7; 
+    --sky-blue: #A5E1F5;
+}
+
+@font-face {
+    font-family: 'translate-server-font';
+    src: url(../assets/fonts/Righteous/Righteous-Regular.ttf) format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'second-font';
+    src: url(../assets/fonts/Parkinsans/Parkinsans-VariableFont_wght.ttf);
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--violette);
+}
+
+.mainContainer {
+    width: 90%;
+    height: 90%;
+    border-radius: 12px;
+    background-color: var(--violette);
+}
+
+header {
+    width: 100%;
+    height: 25%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-family: 'translate-server-font', sans-serif;
+    box-shadow: 10px 10px 10px 1px var(--soft-purple);
+    margin: 0 0 2rem 0;
+}
+
+header > h1 {
+    color: var(--lila);
+    font-size: 3rem;
+    margin: 1.2rem;
+}
+
+header > nav > ul > li {
+    list-style: none;
+}
+
+header > nav > ul > li > a {
+    color: #a84dc7;
+    background-color: #fff;
+    border: solid 4px var(--lila);
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin: 1rem;
+    padding: 0.3rem 1rem;
+    transition: 0.3s ease;
+}
+
+header > nav > ul > li > a:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: var(--lila);
+}
+
+#color {
+    color: #fff;
+    background-color: #a84dc7;
+}
+
+aside {
+    display: flex;
+    width: 100%;
+    height: 75%;
+    font-family: 'second-font';
+    background-color: #fff;
+    box-shadow: 10px 10px 10px 1px var(--soft-purple);
+    border-radius: 15px 15px 0 0;
+}
+
+aside > form {
+    width: 50%;
+    height: 75%;
+    padding: 4rem;
+}
+
+aside > form > fieldset {
+    border: none; 
+    width: 100%;
+    height: 100%;
+}
+
+.secondFieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+aside > form > fieldset > label {
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+    transition: color 0.3s
+}
+
+input[type="radio"]:checked {
+    background-color: var(--purple-gray);
+    border-color: #fff;
+}
+
+aside > form > fieldset > input {
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-size: 2.5rem;
+    font-family: 'second-font';
+    padding: 1.2rem 1.2rem 15rem 1.2rem;
+    margin: 1.4rem 0;
+    border: solid 3px var(--purple-gray);
+    border-radius: 10px;
+    background-color: var(--purple-gray);
+    outline: none;
+    caret-color: var(--lila);
+    
+}
+
+aside > form > .secondFieldset > button {
+    color: #fff;
+    background-color: var(--lila);
+    padding: 1rem 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'second-font';
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+aside > form > .secondFieldset > button:hover {
+    transform: scale(1.05);
+}
+
+.wordTranslate {
+    padding: 4rem;
+}
+
+.wordTranslate > h2 {
+    color: var(--lila);
+    font-size: 2.8rem;
+    margin: 0 0 0.8rem 0;
+}
+
+.wordTranslate > h3 {
+    font-size: 1.5rem;
+    margin: 0 0 0.6rem 0;
+}
+
+.wordTranslate > h4 {
+    color: #575757;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin: 0 0 0.8rem 0;
+}
+
+.exampleImg {
+    margin: 2rem 0 0 0;
+}
+
+.exampleImg > img {
+    width: 22rem;
+    height: 16rem;
+    border: double 10px var(--lila);
+    border-radius: 10px;
+    cursor: not-allowed;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--lila);
+    font-size: 1.1rem;
+    font-family: 'second-font';
+    padding: 3rem;
+    background-color: var(--purple-gray);
+    box-shadow: 10px 10px 10px 1px var(--soft-purple);
+}

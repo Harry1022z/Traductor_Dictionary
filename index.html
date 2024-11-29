@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English - Spanish Translate</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="mainContainer" id="mainContainer">
+    <header>
+        <h1>English/Spanish Translate</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" id="color">Translate</a>
+                    <a href="templates/dictionary.html">Dictionary</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside id="translateAside">
+            <form action="">
+                <fieldset class="firstFieldset">
+                    <label><input type="radio" name="languaje" id="englishLang" value="english">English</label>
+                    <label><input type="radio" name="languaje" id="spanishLang" value="spanish">Spanish</label>
+                </fieldset>
+                <fieldset class="secondFieldset">
+                    <input type="text" name="translate" id="translate" placeholder="Write the word to translate..." required>
+                    <button type="submit" class="translateBtn" id="translateBtn">Translate</button>
+                </fieldset>
+            </form>
+            <section class="wordTranslate" id="wordTranslate">
+                <h2 id="translationSec">...</h2>
+                <h3>Example: <br>There isn't nothing yet.</h3>
+                <h4>Aún no hay traducciones.</h4>
+                <div class="exampleImg" id="exampleImg">
+                    <img src="assets/images/no-image.png" alt="">
+                </div>
+            </section>   
+        </aside>
+    </main>
+    <footer>
+        <p>Create by <strong>Jasmin & Harrison</strong></p>
+    </footer>
+</div>
+<script type="module" src="scripts/app.js"></script>
+<script type="module" src="scripts/vocabulary.js"></script>
+</body>
+</html>
